@@ -1,89 +1,40 @@
-# Spread_Locator
+📊 Project Title: Transactional Data Analysis & Statistical Modeling
+📝 Project Overview
 
-A powerful and efficient tool for locating and tracking the spread of data, IP addresses, or geographic coordinates.
+This project involves a comprehensive analysis of a financial transaction dataset. The goal was to perform Exploratory Data Analysis (EDA), understand the distribution of transaction values, and apply statistical concepts like Q-Q Plots and Probability Distributions to determine the nature of the data.
+📂 Dataset Description
 
-## Features
+The analysis was performed on dataset.csv, which contains simulated transaction records:
+Field Name	Data Type	Description
+transaction_id	UUID	Unique identifier for each transaction record.
+customer_id	String	Unique identifier for the customer.
+transaction_amount	Float	The monetary value of the transaction.
+transaction_date	Date	The date when the transaction occurred.
+transaction_count	Integer	Number of transactions associated with the entry.
+region	String	Geographical area (North, South, East, West).
+transaction_status	String	Status of the payment (Success or Fail).
+🛠️ Tech Stack & Tools
 
-- 🌍 **Geographic Location Detection** - Identify and map locations with precision
-- 🔍 **Spread Tracking** - Monitor and visualize data distribution across regions
-- ⚡ **Fast Performance** - Optimized for quick lookups and processing
-- 📊 **Analytics Dashboard** - View detailed insights and statistics
-- 🔐 **Secure** - Built with security and privacy in mind
+    🐍 Programming: Python (Jupyter Notebook)
 
-## Installation
+    🧪 Libraries: Pandas, Matplotlib, Seaborn, Scipy
 
-```bash
-git clone https://github.com/Deepvejpara/Spread_Locator.git
-cd Spread_Locator
-```
+    📊 Concepts: Statistical Distributions, Quantile-Quantile (Q-Q) Plots
 
-### Requirements
+🚀 Key Features & Analysis
 
-- Python 3.7+
-- pip (Python package manager)
+    📈 Statistical Theory: Detailed explanation of probability distributions and their "shapes" in the data.
 
-### Setup
+    🔍 Data Validation: Using Q-Q Plots to compare dataset quantiles against theoretical distributions to check for normality.
 
-```bash
-pip install -r requirements.txt
-```
+    🧹 Data Handling: Loading and inspecting transactional data for regional and status-based trends.
 
-## Usage
+    📉 Visualization: Graphical representation of data spread and outliers using Python-based plotting tools.
 
-```python
-from spread_locator import Locator
+💡 Key Insights & Findings
 
-# Initialize the locator
-locator = Locator()
+    Distribution Analysis: By utilizing the Spread Locator notebook, the project identifies whether the transaction amounts follow a Normal, Skewed, or Uniform distribution.
 
-# Find location information
-result = locator.find_location("192.168.1.1")
-print(result)
-```
+    Regional Performance: Analysis of the region and transaction_status columns allows for identifying which areas have higher failure rates.
 
-## Configuration
-
-Create a `config.json` file in the root directory:
-
-```json
-{
-  "api_key": "your_api_key_here",
-  "database": "local",
-  "timeout": 30
-}
-```
-
-## Documentation
-
-For detailed documentation, please visit the [Wiki](https://github.com/Deepvejpara/Spread_Locator/wiki).
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions, please:
-
-- Open an [Issue](https://github.com/Deepvejpara/Spread_Locator/issues)
-- Check the [Discussions](https://github.com/Deepvejpara/Spread_Locator/discussions)
-- Contact the maintainer
-
-## Acknowledgments
-
-- Thanks to all contributors
-- Inspired by the need for efficient location tracking solutions
-
----
-
-**Made with ❤️ by [Deepvejpara](https://github.com/Deepvejpara)**
+    Probability Mapping: The use of Q-Q plots helps confirm if the financial data is reliable for further predictive modeling.
